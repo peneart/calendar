@@ -45,6 +45,7 @@ body {
 }
 #calendar {
   width: 100%;
+  height: 100%; /* 추가: 테이블이 컨테이너 높이에 맞게 */
   border-collapse: collapse;
   background: transparent;
 }
@@ -62,7 +63,7 @@ body {
 }
 #calendar td {
   background: #e0f2f1;
-  color: #388e3c;
+  color: #111;
   transition: background 0.2s, color 0.2s;
 }
 #calendar td.today {
