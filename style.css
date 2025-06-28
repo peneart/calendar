@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa 0%, #fffde7 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#calendar-container {
+  width: 90vw;
+  height: 90vh;
+  background: rgba(255,255,255,0.97);
+  border-radius: 0;
+  box-shadow: 0 8px 32px rgba(100,180,180,0.10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+}
+#calendar-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+#calendar-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #43a047;
+  letter-spacing: 2px;
+}
+#calendar button {
+  background: #81d4fa;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 0;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#calendar button:hover {
+  background: #4fc3f7;
+}
+#calendar {
+  width: 100%;
+  border-collapse: collapse;
+  background: transparent;
+}
+#calendar th, #calendar td {
+  width: 3.5rem;
+  height: 3.5rem;
+  text-align: center;
+  font-size: 1.1rem;
+  border-radius: 0; /* 완전한 사각형 */
+  box-shadow: none;
+}
+#calendar th {
+  color: #1976d2;
+  background: #b3e5fc;
+}
+#calendar td {
+  background: #e0f2f1;
+  color: #388e3c;
+  transition: background 0.2s, color 0.2s;
+}
+#calendar td.today {
+  background: #ffd54f;
+  color: #d84315;
+  font-weight: bold;
+  border: 2px solid #ffb300;
+}
+#calendar td:hover {
+  background: #ffe0b2;
+  color: #f4511e;
+}
+/* 파스텔톤 요일별 색상 */
+#calendar td:nth-child(1) { background: #ffe0e0; color: #e53935; } /* 일요일: 파스텔 레드 */
+#calendar td:nth-child(2) { background: #e0f7fa; color: #1976d2; } /* 월요일: 파스텔 블루 */
+#calendar td:nth-child(3) { background: #e8f5e9; color: #43a047; } /* 화요일: 파스텔 그린 */
+#calendar td:nth-child(4) { background: #fffde7; color: #fbc02d; } /* 수요일: 파스텔 옐로우 */
+#calendar td:nth-child(5) { background: #fff3e0; color: #fb8c00; } /* 목요일: 파스텔 오렌지 */
+#calendar td:nth-child(6) { background: #e3f2fd; color: #1976d2; } /* 금요일: 파스텔 블루 */
+#calendar td:nth-child(7) { background: #fce4ec; color: #d81b60; } /* 토요일: 파스텔 핑크 */
